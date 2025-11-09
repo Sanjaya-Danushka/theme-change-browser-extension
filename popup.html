@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Color Changer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 Theme Changer</h1>
+    <p class="subtitle">Choose a color theme for this website</p>
+    
+    <div class="themes-grid">
+      <div class="theme-card" data-theme="default">
+        <div class="theme-preview">
+          <div class="color-dot" style="background: #ffffff;"></div>
+          <div class="color-dot" style="background: #000000;"></div>
+        </div>
+        <span class="theme-name">Default</span>
+      </div>
+
+      <div class="theme-card" data-theme="githubDark">
+        <div class="theme-preview">
+          <div class="color-dot" style="background: #0d1117;"></div>
+          <div class="color-dot" style="background: #c9d1d9;"></div>
+        </div>
+        <span class="theme-name">GitHub Dark</span>
+      </div>
+
+      <div class="theme-card" data-theme="dracula">
+        <div class="theme-preview">
+          <div class="color-dot" style="background: #282a36;"></div>
+          <div class="color-dot" style="background: #bd93f9;"></div>
+        </div>
+        <span class="theme-name">Dracula</span>
+      </div>
+
+      <div class="theme-card" data-theme="monokai">
+        <div class="theme-preview">
+          <div class="color-dot" style="background: #272822;"></div>
+          <div class="color-dot" style="background: #a6e22e;"></div>
+        </div>
+        <span class="theme-name">Monokai</span>
+      </div>
+
+      <div class="theme-card" data-theme="nord">
+        <div class="theme-preview">
+          <div class="color-dot" style="background: #2e3440;"></div>
+          <div class="color-dot" style="background: #88c0d0;"></div>
+        </div>
+        <span class="theme-name">Nord</span>
+      </div>
+
+      <div class="theme-card" data-theme="solarizedDark">
+        <div class="theme-preview">
+          <div class="color-dot" style="background: #002b36;"></div>
+          <div class="color-dot" style="background: #268bd2;"></div>
+        </div>
+        <span class="theme-name">Solarized</span>
+      </div>
+
+      <div class="theme-card" data-theme="oneDark">
+        <div class="theme-preview">
+          <div class="color-dot" style="background: #282c34;"></div>
+          <div class="color-dot" style="background: #61afef;"></div>
+        </div>
+        <span class="theme-name">One Dark</span>
+      </div>
+
+      <div class="theme-card" data-theme="tokyoNight">
+        <div class="theme-preview">
+          <div class="color-dot" style="background: #1a1b26;"></div>
+          <div class="color-dot" style="background: #7aa2f7;"></div>
+        </div>
+        <span class="theme-name">Tokyo Night</span>
+      </div>
+
+      <div class="theme-card" data-theme="gruvbox">
+        <div class="theme-preview">
+          <div class="color-dot" style="background: #282828;"></div>
+          <div class="color-dot" style="background: #fabd2f;"></div>
+        </div>
+        <span class="theme-name">Gruvbox</span>
+      </div>
+
+      <div class="theme-card" data-theme="materialDark">
+        <div class="theme-preview">
+          <div class="color-dot" style="background: #263238;"></div>
+          <div class="color-dot" style="background: #89ddff;"></div>
+        </div>
+        <span class="theme-name">Material</span>
+      </div>
+
+      <div class="theme-card" data-theme="ayu">
+        <div class="theme-preview">
+          <div class="color-dot" style="background: #0f1419;"></div>
+          <div class="color-dot" style="background: #ffb454;"></div>
+        </div>
+        <span class="theme-name">Ayu Dark</span>
+      </div>
+
+      <div class="theme-card" data-theme="nightOwl">
+        <div class="theme-preview">
+          <div class="color-dot" style="background: #011627;"></div>
+          <div class="color-dot" style="background: #82aaff;"></div>
+        </div>
+        <span class="theme-name">Night Owl</span>
+      </div>
+
+      <div class="theme-card" data-theme="synthwave">
+        <div class="theme-preview">
+          <div class="color-dot" style="background: #2b213a;"></div>
+          <div class="color-dot" style="background: #ff7edb;"></div>
+        </div>
+        <span class="theme-name">Synthwave</span>
+      </div>
+
+      <div class="theme-card" data-theme="cobalt">
+        <div class="theme-preview">
+          <div class="color-dot" style="background: #002240;"></div>
+          <div class="color-dot" style="background: #0088ff;"></div>
+        </div>
+        <span class="theme-name">Cobalt</span>
+      </div>
+
+      <div class="theme-card" data-theme="highContrast">
+        <div class="theme-preview">
+          <div class="color-dot" style="background: #000000;"></div>
+          <div class="color-dot" style="background: #ffffff;"></div>
+        </div>
+        <span class="theme-name">High Contrast</span>
+      </div>
+
+      <div class="theme-card" data-theme="sepia">
+        <div class="theme-preview">
+          <div class="color-dot" style="background: #704214;"></div>
+          <div class="color-dot" style="background: #f4ecd8;"></div>
+        </div>
+        <span class="theme-name">Sepia</span>
+      </div>
+
+      <div class="theme-card" data-theme="eyeCare">
+        <div class="theme-preview">
+          <div class="color-dot" style="background: #f5f2e8;"></div>
+          <div class="color-dot" style="background: #8b7355;"></div>
+        </div>
+        <span class="theme-name">Eye Care</span>
+      </div>
+    </div>
+
+    <div class="status-message" id="statusMessage"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
